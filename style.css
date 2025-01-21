@@ -1,0 +1,48 @@
+body {
+    font-family: 'Brush Script MT', cursive;
+    margin: 10px; 
+}
+
+table {
+    border-collapse: collapse; 
+    width: 100%; 
+    table-layout: auto; 
+    font-size: 14px; 
+}
+
+th, td {
+    text-align: left;
+    padding: 5px 10px; 
+    border: 1px solid #ccc; 
+}
+
+th {
+    background-color: rgba(218, 180, 229, 0.863); 
+    font-weight: bold;
+    font-size: 14px; 
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+tr:hover {
+    background-color: #f1f1f1; 
+}
+
+h1 {
+    font-size: 25px; 
+    font-weight: bold; 
+    color: #3a73b7; 
+    text-align: center; 
+    margin-top: 8px;
+    margin-bottom: 8px; 
+    font-family: 'Brush Script MT', cursive; 
+    text-transform: uppercase; 
+}
+
+.empty-row td {
+    background-color: rgba(5, 136, 246, 0.4); 
+    height: 10px; 
+    border: none; 
+}
