@@ -1,3 +1,16 @@
+const axios = require("axios");
+
+async function getUser() {
+    try {
+      const response = await axios.get('/user?ID=12345'); // bytt ut bruker med backend navnet
+      const data = JSON.parse(response)
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+      
+    }
+  }
+
 const data = [
     { name: "Audun N", trait: "Rask", team: "Team 1" },
     { name: "Aleksander Agledal", trait: "Kul", team: "Team 1" },
@@ -76,3 +89,6 @@ function populateTable(data) {
         document.addEventListener("DOMContentLoaded", () => {
             populateTable(data);
         });
+
+        //*CRUD
+        // const data= response.json.par */
